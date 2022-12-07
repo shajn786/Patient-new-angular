@@ -1,0 +1,30 @@
+<app-navbar></app-navbar>
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">name</th>
+                            <th scope="col">age</th>
+                            <th scope="col">place</th>
+                            <th scope="col">Mobile Number</th>
+                          </tr>
+                          <tr  *ngFor ="let i of data" >
+                            <td>{{i.name}}</td>
+                            <td>{{i.age}}</td>
+                            <td>{{i.place}}</td>
+                            <td>{{i.mobno}}</td>
+                            
+                          </tr>
+                        </thead>
+                      </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
