@@ -1,26 +1,36 @@
 <app-navbar></app-navbar>
-<div class="container">
+<div class="container mt-4">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <div class="row g-3">
-                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <label for="" class="form label">name</label>
+                
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form label">Name</label>
                     <input name="name"[(ngModel)]="name"type="text" class="form-control">
                 </div>
-                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <label for="" class="form label">age</label>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form label">Age</label>
                     <input name="age"[(ngModel)]="age"type="text" class="form-control">
                 </div>
-                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <label for="" class="form label">place</label>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form label">Place</label>
                     <input name="place"[(ngModel)]="place" type="text" class="form-control">
                 </div>
-                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form label">Mobile Number</label>
                     <input name="mobno"[(ngModel)]="mobno" type="text" class="form-control">
                 </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form label">Doctor Name</label>
+                    <select name="doctorname"  [(ngModel)]="doctorname"  id="" class="form-select">
+                        <option value="Dr. johnson">Dr. johnson (Paediatrics)</option>
+                        <option value="Dr. Cherian George">Dr. Cherian George (Neurology)</option>
+                        <option value="Dr. Varghese Paul">Dr. Varghese Paul  (Oncology)</option>
+                       
+                    </select>
+                </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <button (click)="readValues()"class="btn btn-success">submit</button>
+                    <button (click)="readValues()"class="btn btn-success">Submit</button>
                 </div>
             </div>
         </div>

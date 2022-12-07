@@ -12,6 +12,7 @@ export class AddPatientComponent {
   age=""
   place=""
   mobno=""
+  doctorname=""
 
   constructor(private api : ApiService)
   {
@@ -20,7 +21,7 @@ export class AddPatientComponent {
 
   readValues=()=>
   {
-    let data:any = {"name":this.name,"age":this.age,"place":this.place,"mobno":this.mobno}
+    let data:any = {"name":this.name,"age":this.age,"place":this.place,"mobno":this.mobno,"doctorname":this.doctorname}
     console.log(data)
     this.api.AdPatients(data).subscribe(
 
